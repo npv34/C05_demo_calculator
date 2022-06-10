@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        table {
+            width: 300px;
+            background-color: red;
+        }
+
+        button {
+            width: 100%;
+            height: 40px;
+        }
+
+        input {
+            width: 97%;
+            height: 50px;
+        }
+    </style>
+
+</head>
+
+<body>
+<table>
+    <tr>
+        <td colspan="4">
+            <input type="text" disabled id="screen">
+        </td>
+    </tr>
+    <tr>
+        <td><button onclick="setScreen(1)">1</button></td>
+        <td><button onclick="setScreen(2)">2</button></td>
+        <td><button onclick="setScreen(3)">3</button></td>
+        <td><button onclick="setScreen('+')">+</button></td>
+    </tr>
+    <tr>
+        <td><button onclick="setScreen(4)">4</button></td>
+        <td><button onclick="setScreen(5)">5</button></td>
+        <td><button onclick="setScreen(6)">6</button></td>
+        <td><button onclick="setScreen('-')">-</button></td>
+    </tr>
+    <tr>
+        <td><button onclick="setScreen(7)">7</button></td>
+        <td><button onclick="setScreen(8)">8</button></td>
+        <td><button onclick="setScreen(9)">9</button></td>
+        <td><button onclick="setScreen('*')">X</button></td>
+    </tr>
+    <tr>
+        <td><button onclick="clearScreen()">C</button></td>
+        <td><button onclick="setScreen(0)">0</button></td>
+        <td><button onclick="cal()">=</button></td>
+        <td><button onclick="setScreen('/')">/</button></td>
+    </tr>
+</table>
+<script src="my.js"></script>
+</body>
+</html>
