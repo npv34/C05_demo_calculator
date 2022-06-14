@@ -1,7 +1,13 @@
 
 let checkOperator = false;
+let checkCalculator = false;
 
 function setScreen(value) {
+    if (checkCalculator) {
+        document.getElementById('screen').value = '';
+        checkCalculator = false;
+    }
+
     switch (value) {
         case '+':
         case '-':
@@ -20,8 +26,8 @@ function setScreen(value) {
 
 function cal() {
     let input = document.getElementById('screen').value;
-    let result = eval(input);
-    document.getElementById('screen').value = result;
+    document.getElementById('screen').value = eval(input);
+    checkCalculator = true;
 }
 
 function clearScreen() {
